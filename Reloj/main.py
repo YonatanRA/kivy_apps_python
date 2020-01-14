@@ -7,7 +7,7 @@ from kivy.utils import get_color_from_hex
 from time import strftime
 
 
-class ClockApp(App):
+class RelojApp(App):
     sw_started = False
     sw_seconds = 0
 
@@ -34,10 +34,14 @@ class ClockApp(App):
             self.sw_started = False
 
         self.sw_seconds = 0
+        
+        
+        
+        
 
 if __name__ == '__main__':
     Window.clearcolor = get_color_from_hex('#101216')
     LabelBase.register(name='Roboto',
                        fn_regular='Roboto-Thin.ttf',
                        fn_bold='Roboto-Medium.ttf')
-    ClockApp().run()
+    RelojApp().run()
