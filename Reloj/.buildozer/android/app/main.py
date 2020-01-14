@@ -1,3 +1,4 @@
+import kivy
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.core.text import LabelBase
